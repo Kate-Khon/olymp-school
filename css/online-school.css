@@ -1,0 +1,101 @@
+:root {
+  --main-color: #555D9D;
+  --light-main: #C5BFED;
+  --color-link: #FEFEFE;
+  --top-color: #FFFFFF;
+  --accent-color: #37A18E;
+  --color-todo: #D24A43;
+}
+
+.top {
+  height: 750px;
+  background-color: var(--main-color);
+}
+
+.sides__left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  height: 750px;
+}
+
+.title--online-school {
+  font-size: 35px;
+  line-height: 120%;
+  letter-spacing: -0.35px;
+  text-shadow: 0 4px 4px #00000040;
+}
+
+.demo-access {
+  padding: 6px 30px 12px;
+  width: fit-content;
+  line-height: 150%;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: none;
+  background-color: var(--color-todo);
+  border-radius: 34px;
+}
+
+.os-list__list {
+  margin: 72px 0 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.os-list__list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.os-list__list-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 120px;
+  color: var(--top-color);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  background-color: #80A1F6;  
+}
+
+.os-list__list-item:nth-child(2) .os-list__list-text {
+  background-color: #51EB4E;
+}
+
+.os-list__list-item:nth-child(3) .os-list__list-text {
+  background-color: #EBAC4E;
+}
+
+.os-list__list-item:nth-child(4) .os-list__list-text {
+  background-color: #E2DA19;
+}
+
+.os-list__list-item:nth-child(5) .os-list__list-text {
+  background-color: #F15E5E;
+}
+
+.os-list__list-item:nth-child(6) .os-list__list-text {
+  background-color: #EFACFF;
+}
+
+.os-list__list-item:nth-child(7) .os-list__list-text {
+  background-color: #9E9E9E;
+}
+
+.os-list__list-item:nth-child(8) .os-list__list-text {
+  background-color: #00B2FF;
+}
+
+.os-list__list-img {
+  margin: 0 124px;
+}
+
+.footer {
+  background-color: #ccc;
+}
