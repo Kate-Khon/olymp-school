@@ -96,6 +96,120 @@
   margin: 0 124px;
 }
 
+.price__container {
+  max-width: 1106px;
+  padding: 170px 0 32px;
+}
+
+.price__title {
+  text-align: center;
+  text-shadow: 0px 3px 3px #00000040;
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.46px;
+}
+
+.price__subtitle {
+  text-align: center;
+  text-shadow: 0px 3px 3px #00000040;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.27px;
+}
+
+.price__list {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+    'el1 el2'
+    'el3 el4'
+    'el5 el5'
+    'el6 el6';
+  gap: 24px 12px;
+}
+
+.price__list-item {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+.price__list-item:nth-child(5) {
+  width: 840px;
+  grid-area: el5;
+}
+
+.price__list-item:nth-child(6) {
+  width: 840px;
+  grid-area: el6;
+}
+
+.price__list-title {
+  padding: 6px 0 4px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.21px;
+  background-color: #47DD00;
+}
+
+.price__list-item:nth-child(2) .price__list-title {
+  background-color: #FF8EA9;
+}
+
+.price__list-item:nth-child(3) .price__list-title {
+  background-color: #74DEFF;
+}
+
+.price__list-item:nth-child(4) .price__list-title {
+  background-color: #00A3FF;
+}
+
+.price__list-item:nth-child(5) .price__list-title {
+  background-color: #F1F500;
+}
+
+.price__list-item:nth-child(6) .price__list-title {
+  background-color: #FFA53A;
+}
+
+.price__sublist {
+  margin-top: 8px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 22px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+  background-color: var(--top-color);
+}
+
+.price__sublist--big {
+  padding: 14px 0 18px;
+}
+
+.price__sublist-item {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.price__sublist-item p {
+  text-align: center;
+}
+
+.price__sublist--big .price__sublist-item {
+  width: auto;
+  font-size: 21px;
+  line-height: 150%;
+  letter-spacing: -0.21px;
+}
+
 .footer {
   background-color: #ccc;
 }
