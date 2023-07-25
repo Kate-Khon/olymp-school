@@ -37,6 +37,12 @@
   text-shadow: none;
   background-color: var(--color-todo);
   border-radius: 34px;
+  transition: all .5s;
+}
+
+.demo-access:hover {
+  text-shadow: 0 5px 5px #00000040;
+  background-color: var(--accent-color);
 }
 
 .os-list__list {
@@ -49,6 +55,11 @@
 .os-list__list-item {
   display: flex;
   justify-content: center;
+  transition: all .5s;
+}
+
+.os-list__list-item:hover {
+  transform: scale(110%);
 }
 
 .os-list__list-text {
@@ -136,6 +147,11 @@
   display: flex;
   flex-direction: column;
   width: 420px;
+  transition: all 0.5s;
+}
+
+.price__list-item:hover {
+  transform: scale(105%);
 }
 
 .price__list-item:nth-child(5) {
@@ -235,6 +251,19 @@
   display: flex;
   flex-direction: column;
   max-width: 430px;
+  transition: all .4s;
+}
+
+.promotions__list-item:hover {
+  transform: scale(105%);
+}
+
+.promotions__list-img {
+  transition: all .4s;
+}
+
+.promotions__list-item:hover .promotions__list-img {
+  border-radius: 40px;
 }
 
 .promotions__list-title {

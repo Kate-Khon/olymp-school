@@ -2,6 +2,7 @@
   --main-color: #555D9D;
   --light-main: #C5BFED;
   --color-link: #FEFEFE;
+  --color-hover: #FF8100;
   --top-color: #FFFFFF;
   --accent-color: #37A18E;
   --color-todo: #D24A43;
@@ -88,6 +89,12 @@ body {
   line-height: 150%;
   letter-spacing: -0.16px;
   border-radius: 30px;
+  transition: all .4s;
+}
+
+.menu__list-link:hover {
+  text-shadow: 0 4px 4px #00000040;
+  background-color: var(--color-hover);
 }
 
 /* main */
@@ -172,6 +179,12 @@ body {
   font-weight: 600;
   letter-spacing: -0.2px;
   border-radius: 30px;
+  transition: all .4s;
+}
+
+.top__director-articles:hover {
+  text-shadow: 0 4px 4px #00000040;
+  background-color: var(--color-hover);
 }
 
 .top__tel {
@@ -190,14 +203,22 @@ body {
   color: #434A86;
 }
 
+.top__tel-border {
+  text-shadow: none;
+  -webkit-text-stroke: 4px #FFFFFF;
+}
+
 .top__tel--numbers {
   position: absolute;
   top: 0;
 }
 
-.top__tel-border {
-  text-shadow: none;
-  -webkit-text-stroke: 4px #FFFFFF;
+.top__tel-number {
+  transition: all .5s;
+}
+
+.top__tel-number:hover {
+  color: var(--color-hover);
 }
 
 .top__social-networks {
@@ -209,6 +230,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+
+.top__social-networks * {
+  transition: all 0.5s;
+}
+
+.top__social-networks *:hover {
+  transform: scale(110%);
 }
 
 .olymp-info {
@@ -334,6 +363,12 @@ body {
   font-weight: 500;
   line-height: 36px;
   border: 3px solid;
+  transition: all .4s;
+}
+
+.our-achievements__list-item:hover {
+  color: var(--top-color);
+  transform: scale(110%);
 }
 
 .our-achievements__list-item:first-child,
@@ -341,28 +376,58 @@ body {
   border-color: #4365DD;
 }
 
+.our-achievements__list-item:first-child:hover,
+.our-achievements__list-item:last-child:hover {
+  background-color: #4365DD;
+}
+
 .our-achievements__list-item:nth-child(2) {
   border-color: #69D924;
+}
+
+.our-achievements__list-item:nth-child(2):hover {
+  background-color: #69D924;
 }
 
 .our-achievements__list-item:nth-child(3) {
   border-color: #24D9AD;
 }
 
+.our-achievements__list-item:nth-child(3):hover {
+  background-color: #24D9AD;
+}
+
 .our-achievements__list-item:nth-child(4) {
   border-color: #9424D9;
+}
+
+.our-achievements__list-item:nth-child(4):hover {
+  background-color: #9424D9;
 }
 
 .our-achievements__list-item:nth-child(5) {
   border-color: #D9244F;
 }
 
+.our-achievements__list-item:nth-child(5):hover {
+  background-color: #D9244F;
+}
+
 .our-achievements__list-item:nth-child(6) {
   border-color: #FFF176;
 }
 
+.our-achievements__list-item:nth-child(6):hover {
+  color: gray;
+  background-color: #FFF176;
+}
+
 .our-achievements__list-item:nth-child(7) {
   border-color: #7694FF;
+}
+
+.our-achievements__list-item:nth-child(7):hover {
+  background-color: #7694FF;
 }
 
 .our-achievements__list-item::before {
@@ -375,6 +440,17 @@ body {
   width: 47px;
   height: 48px;
   background: url(../images/check-mark.png);
+  transition: all .5s;
+}
+
+.our-achievements__list-item:hover::before {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.our-achievements__list-item:nth-child(6):hover::before {
+  -webkit-filter: invert(50%);
+  filter: invert(50%);
 }
 
 /* footer */
@@ -407,6 +483,14 @@ body {
   gap: 8px;
 }
 
+.contacts__social-networks * {
+  transition: all 0.5s;
+}
+
+.contacts__social-networks *:hover {
+  transform: scale(110%);
+}
+
 .contacts__title {
   color: var(--main-color);
   font-size: 72px;
@@ -431,6 +515,11 @@ body {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.245px;
+  transition: all .3s;
+}
+
+.contacts__info:hover {
+  text-shadow: 0 0 4px #00000040;
 }
 
 .footer__menu-list {
