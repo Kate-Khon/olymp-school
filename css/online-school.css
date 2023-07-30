@@ -329,5 +329,163 @@
 }
 
 .steps-to-start__img {
-  margin: 0 -19px -19px 0;
+  margin: 0 0 -12px 0;
+  display: block;
+  transition: all 0.5s;
+}
+
+.steps-to-start__img:hover {
+  transform: scale(108%);
+}
+
+@media (max-width: 1440px) {
+  .steps-to-start__img {
+    max-width: 90%;
+  }
+
+  .steps-to-start__img-container img {
+    max-width: 30%;
+  }
+
+  .os-list__list {
+    align-items: center;
+  }
+
+  .os-list__list-item {
+    max-width: 90%;
+  }
+
+  .os-list__list-text {
+    height: 100px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -1.4px;
+  }
+
+  .price__container {
+    max-width: 90%;
+    /* background-color: pink!important; */
+    /* border-radius: 70% 70% 0 0 / 65px; */
+    /* border-start-start-radius: 10% 22px; */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .top {
+    height: auto;
+  }
+
+  .sides__left-side {
+    justify-content: initial;
+    align-items: center;
+    height: fit-content;
+    gap: 28px;
+  }
+
+  .sides__middle-side {
+    margin-bottom: 10px;
+  }
+
+  .title--online-school {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .demo-access {
+    padding: 10px 30px 12px;
+    font-size: 28px;
+  }
+
+  .top__social-networks {
+    margin: 28px auto;
+    position: static;
+    flex-direction: row;
+  }
+
+  .top__social-networks a:nth-child(2) img {
+    margin-right: -4px;
+  }
+
+  .os-list__list-item {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .os-list__list-item:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .os-list__list-text {
+    width: 90%;
+    line-height: 120%;
+    font-size: 22px;
+  }
+
+  .price {
+    background-color: var(--light-main);
+    border-radius: 30px 30px 0 0;
+  }
+  
+  .price__container {
+    padding: 40px 0 60px;
+    background: none!important;
+  }
+
+  .price__title {
+    line-height: 120%;
+    font-size: 28px;
+  }
+
+  .price__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+  }
+
+  .price__list {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__list .price__list-item {
+    width: 420px;
+    max-width: 98%;
+  }
+
+  .price__sublist-item p {
+    text-align: left;
+  }
+  
+  .price__sublist--big .price__sublist-item {
+    width: 280px;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+  }
+
+  .promotions__title {
+    margin-bottom: 36px;
+    font-size: 36px;
+  }
+
+  .promotions__list {
+    margin: auto;
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .promotions__list-item {
+    max-width: 90%;
+  }
+
+  .promotions__list-title {
+    margin-bottom: 20px;
+    height: auto;
+    font-size: 28px;
+  }
 }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olymp</title>
+  <link rel="icon" href="./images/big-logo.svg" sizes="16x16" type="image/svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,21 +24,27 @@
             <span class="logo__text">ОНЛАЙН ШКОЛА</span>
           </a>
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a href="index.html" class="menu__list-link">Головна</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Вартість послуг</a>
+                <a href="#price" class="menu__list-link">Вартість послуг</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Акції</a>
+                <a href="#promotions" class="menu__list-link">Акції</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Контакти</a>
+                <a href="#contacts" class="menu__list-link">Контакти</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link link-with-img">
+                <a href="https://collegium-olimp.online/login" class="menu__list-link link-with-img">
                   <span>Вхід</span>
                   <img src="images/key.svg" alt="key">
                 </a>
@@ -121,14 +128,14 @@
             </li>
             <li class="os-list__list-item">
               <img src="images/decoration/8.svg" alt="" class="os-list__list-img">
-              <span class="os-list__list-text">Жодних вступних внесківв</span>
+              <span class="os-list__list-text">Жодних вступних внесків</span>
             </li>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" id="price">
         <div class="container price__container" style="background: url(./images/backgrounds/price-bg.png) no-repeat;">
           <h2 class="price__title">Оберіть свій пакет для онлайн навчання</h2>
           <h3 class="price__subtitle">Реєструйтеся на 2023-2024 навчальний рік</h3>
@@ -211,9 +218,9 @@
                 </li>
                 <li class="price__sublist-item">🥇 уроки проходять в реальному часі з викладачами ️</li>
                 <li class="price__sublist-item">міні групи по 3-5 учнів </li>
-                <li class="price__sublist-item">🐝персональний куратор</li>
+                <li class="price__sublist-item">🐝 персональний куратор</li>
                 <li class="price__sublist-item">🕗 всі заняття проходять у другій половині дня </li>
-                <li class="price__sublist-item">📚цілодобовий доступ до всіх навчальних матеріалів</li>
+                <li class="price__sublist-item">📚 цілодобовий доступ до всіх навчальних матеріалів</li>
               </ul>
             </li>
 
@@ -229,7 +236,7 @@
         </div>
       </section>
 
-      <section class="promotions">
+      <section class="promotions" id="promotions">
         <div class="container">
           <h2 class="promotions__title">Наші постійні АКЦІЇ</h2>
           <ul class="promotions__list">
@@ -237,8 +244,10 @@
             <li class="promotions__list-item">
               <img src="./images/promotions-1.png" alt="olymp family" class="promotions__list-img">
               <h3 class="promotions__list-title">Акція "Родина" 👨‍👨‍👧‍👦</h3>
-              <p class="promotions__list-details">Акція "Родина" 👨‍👨‍👧‍👦 <br><br> Родина що бажає навчати двох та більше
-                дітей отримує: <br><br> - на другий договір ЗНИЖКА 10% <br> - на третій договір ЗНИЖКА 15% <br><br> *Акція діє при підписанні
+              <p class="promotions__list-details">Акція "Родина" 👨‍👨‍👧‍👦 <br><br> Родина що бажає навчати двох та
+                більше
+                дітей отримує: <br><br> - на другий договір ЗНИЖКА 10% <br> - на третій договір ЗНИЖКА 15% <br><br>
+                *Акція діє при підписанні
                 договорів на пакети "Повний" або" Базовий"</p>
             </li>
 
@@ -247,9 +256,12 @@
               <img src="./images/promotions-2.png" alt="olymp friends" class="promotions__list-img">
               <h3 class="promotions__list-title promotions__list-title--small">Акція <br> 👬"Навчайтесь разом з
                 друзями"👭</h3>
-              <p class="promotions__list-details">Акція👬 "Навчайтесь разом з друзями"👭 <br><br> - Приведи з собою друга, та
-                обидва отримайте по 10% знижки на навчання. <br><br> - Кількість запрошених вами друзів необмежена. <br> 5 друзів -
-                50% знижки <br> 10 друзів - 1 рік навчаєтесь ❗БЕЗКОШТОВНО❗ <br><br> *Акція діє при підписанні договорів на пакети"
+              <p class="promotions__list-details">Акція👬 "Навчайтесь разом з друзями"👭 <br><br> - Приведи з собою
+                друга, та
+                обидва отримайте по 10% знижки на навчання. <br><br> - Кількість запрошених вами друзів необмежена. <br>
+                5 друзів -
+                50% знижки <br> 10 друзів - 1 рік навчаєтесь ❗БЕЗКОШТОВНО❗ <br><br> *Акція діє при підписанні договорів
+                на пакети"
                 Повний" або" Базовий"</p>
             </li>
           </ul>
@@ -257,19 +269,27 @@
       </section>
 
       <section class="steps-to-start">
-        <h2 class="steps-to-start__title">ЩО ПОТРІБНО ДЛЯ ТОГО ЩОБ У НАС НАВЧАТИСЯ?<p class="steps-to-start__title steps-to-start__title--inside">ЩО ПОТРІБНО ДЛЯ ТОГО ЩОБ У НАС НАВЧАТИСЯ?</p></h2>
-        <div class="steps-to-start__img-container">
-          <img src="./images/step1.png" alt="Зателефонувати нам" class="steps-to-start__img">
-          <img src="./images/step2.png" alt="отримати детальну консультацію і обрати пакет" class="steps-to-start__img">
-          <img src="./images/step3.png" alt="підписати договір" class="steps-to-start__img" style="padding-top: 30px;">
+        <div class="container">
+          <h2 class="steps-to-start__title">ЩО ПОТРІБНО ДЛЯ ТОГО ЩОБ У НАС НАВЧАТИСЯ?<p
+              class="steps-to-start__title steps-to-start__title--inside">ЩО ПОТРІБНО ДЛЯ ТОГО ЩОБ У НАС НАВЧАТИСЯ?</p>
+          </h2>
+          <div class="steps-to-start__img-container">
+            <img src="./images/step1.png" alt="Зателефонувати нам" class="steps-to-start__img">
+            <img src="./images/step2.png" alt="отримати детальну консультацію і обрати пакет"
+              class="steps-to-start__img">
+            <img src="./images/step3.png" alt="підписати договір" class="steps-to-start__img"
+              style="padding-top: 30px;">
+          </div>
+          <img src="./images/step4.png" alt="з задоволенням навчатися у найкращій онлайн школі"
+            class="steps-to-start__img m-auto">
         </div>
-        <img src="./images/step4.png" alt="з задоволенням навчатися у найкращій онлайн школі" class="steps-to-start__img">
+
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="contacts footer__contacts">
+        <div class="contacts footer__contacts" id="contacts">
           <div class="contacts__address">
             <img src="images/logo.svg" alt="olimp logo" class="contacts__logo">
             <h3 class="contacts__subtitle">Адреса</h3>
@@ -301,16 +321,16 @@
               <a href="index.html" class="menu__list-link">Головна</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">Вартість послуг</a>
+              <a href="#price" class="menu__list-link">Вартість послуг</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link">Акції</a>
+              <a href="#promotions" class="menu__list-link">Акції</a>
             </li>
             <li class="menu__list-item">
               <a href="#" class="menu__list-link">Демо-доступ</a>
             </li>
             <li class="menu__list-item">
-              <a href="#" class="menu__list-link link-with-img">
+              <a href="https://collegium-olimp.online/login" class="menu__list-link link-with-img">
                 <span>Вхід</span>
                 <img src="images/key.svg" alt="key">
               </a>
@@ -327,6 +347,7 @@
     </footer>
   </div>
 
+  <script src="js/main.js"></script>
 </body>
 
 </html>
