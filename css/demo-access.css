@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.studentNav__icon {
+  width: 20px;
+  margin-right: 4px;
+}
+
+.demo-access-container {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.header {
+
+}
+
+.logo-2 {
+  margin: auto;
+}
+
+.header__logout {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  color: #000;
+  cursor: pointer;
+}
+
+.main {
+  padding: 30px 0;
+  background-color: #ccc;
+}
+
+.navigation {
+  padding: 20px;
+  width: 200px;
+  background-color: pink;
+  text-transform: uppercase;
+}
+
+.main-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-menu__list-item {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.main-menu__list-item.active,
+.main-menu__list-item:hover,
+.header__logout:hover {
+  color: #7f00a3;
+}
+
+.demo-access-section {
+  display: none;
+  background-color: #fff;
+  width: calc(100% - 240px);
+}
+
+.demo-access-section.active {
+  display: block;
+}
+
+.demo-access-section__title {
+  padding: 26px 40px;
+  display: flex;
+  gap: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #333;
+  letter-spacing: 0px;
+}
+
+.footer {
+  padding: 40px;
+  background-color: #333;
+  border: none;
+}
+
+.footer__inner {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+.footer__img {
+  width: 125px;
+}
