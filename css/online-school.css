@@ -530,6 +530,8 @@
   .sides__middle-side {
     margin-bottom: 10px;
     position: static;
+    max-width: 70%;
+    min-width: 300px;
   }
 
   .title--online-school {
@@ -574,7 +576,7 @@
   }
   
   .price__container {
-    padding: 40px 0 60px;
+    padding: 40px 0 0;
     background: none!important;
   }
 
