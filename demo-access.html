@@ -50,7 +50,7 @@
                 <i class="studentNav__icon fa fa-calendar-alt" aria-hidden="true"></i>
                 Розклад
               </li>
-              <li class="main-menu__list-item">
+              <li class="main-menu__list-item green">
                 <i class="studentNav__icon fa fa-user-check" aria-hidden="true"></i>
                 Журнал
               </li>
@@ -185,15 +185,26 @@
 
             <div class="profile__container">
               <img src="./images/cat.png" alt="student" class="profile__photo">
-              <div class="form__field-holder"><input class="form__field readonly required" type="select" title="Роль" autocomplete="new-password" readonly="" value="Учень"><span class="form__field-placeholder isFilled">Роль</span></div>
+              <div class="form__field-holder"><input class="form__field readonly required" type="select" title="Роль"
+                  autocomplete="new-password" readonly="" value="Учень"><span
+                  class="form__field-placeholder isFilled">Роль</span></div>
 
-              <div class="form__field-holder"><input class="form__field readonly required" type="select" title="Клас" autocomplete="new-password" readonly="" value="8 Пакет &quot;Повний&quot;"><span class="form__field-placeholder isFilled">Клас</span></div>
+              <div class="form__field-holder"><input class="form__field readonly required" type="select" title="Клас"
+                  autocomplete="new-password" readonly="" value="8 Пакет &quot;Повний&quot;"><span
+                  class="form__field-placeholder isFilled">Клас</span></div>
 
-              <div class="form__field-holder"><input id="username" class="form__field readonly required" type="select" title="Ім'я" autocomplete="new-password" value=""><span class="form__field-placeholder isFilled">Ім'я</span></div>
+              <div class="form__field-holder"><input id="username" class="form__field required" type="select"
+                  title="Ім'я" autocomplete="new-password" value=""><span
+                  class="form__field-placeholder isFilled">Ім'я</span></div>
 
-              <div class="form__field-holder"><input class="form__field readonly required" type="password" title="Логін" autocomplete="new-password" value="login"><span class="form__field-placeholder isFilled">Логін</span></div>
+              <div class="form__field-holder"><input class="form__field readonly required" readonly="" type="password"
+                  title="Логін" autocomplete="new-password" value="login"><span
+                  class="form__field-placeholder isFilled">Логін</span>
+              </div>
 
-              <div class="form__field-holder"><input class="form__field readonly required" type="password" title="Пароль" autocomplete="new-password" value="password"><span class="form__field-placeholder isFilled">Пароль</span></div>
+              <div class="form__field-holder"><input class="form__field readonly required" readonly="" type="password"
+                  title="Пароль" autocomplete="new-password" value="password"><span
+                  class="form__field-placeholder isFilled">Пароль</span></div>
             </div>
           </div>
         </section>
@@ -390,6 +401,212 @@
               <i class="studentNav__icon fa fa-user-check" aria-hidden="true"></i>
               Журнал
             </h2>
+
+            <div class="journal-container">
+              <div class="journal-holder">
+                <div class="journal-wrapper">
+                  <div class="journal__days">
+                    <div class="journal__prev"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="journal__next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="journal__day first"></div>
+                    <div class="journal__day"><span>Понеділок</span><span class="journal__day-date"><strong>07
+                          серп</strong> 2023</span></div>
+                    <div class="journal__day active"><span>Сьогодні: Вівторок</span><span
+                        class="journal__day-date"><strong>08 серп</strong> 2023</span></div>
+                    <div class="journal__day"><span>Середа</span><span class="journal__day-date"><strong>09
+                          серп</strong>
+                        2023</span></div>
+                    <div class="journal__day"><span>Четвер</span><span class="journal__day-date"><strong>10
+                          серп</strong>
+                        2023</span></div>
+                    <div class="journal__day"><span>П'ятниця</span><span class="journal__day-date"><strong>11
+                          серп</strong> 2023</span></div>
+                    <div class="journal__day isHoliday"><span>Субота</span><span class="journal__day-date"><strong>12
+                          серп</strong> 2023</span></div>
+                  </div>
+                  <div class="journal__schedule">
+                    <div class="journal__timeSlot-holder">
+                      <div class="journal__timeSlot">8:00</div>
+                      <div class="journal__timeSlot">09:00</div>
+                      <div class="journal__timeSlot">10:00</div>
+                      <div class="journal__timeSlot">11:00</div>
+                      <div class="journal__timeSlot">12:00</div>
+                      <div class="journal__timeSlot">13:00</div>
+                      <div class="journal__timeSlot">14:00</div>
+                      <div class="journal__timeSlot">15:00</div>
+                      <div class="journal__timeSlot">16:00</div>
+                      <div class="journal__timeSlot">17:00</div>
+                    </div>
+                    <div class="journal__currentTime-holder">
+                      <div class="journal__currentTime" style="top: 61.2963%;"></div>
+                    </div>
+                    <div class="journal__lessons">
+                      <div class="journal__lessons-item skipped" style="top: 22.2222%; height: 8.33333%;">
+                        <div class="journal__lessons-time">10:00 • 10:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>українська література</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/l.korostosheviz"><strong>Лариса Коростошевиць</strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item skipped" style="top: 33.3333%; height: 8.33333%;">
+                        <div class="journal__lessons-time">11:00 • 11:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>історія</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/v.sabaldashov"><strong>Віктор Сабалдашов</strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item skipped" style="top: 44.4444%; height: 8.33333%;">
+                        <div class="journal__lessons-time">12:00 • 12:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>історія</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/v.sabaldashov"><strong>Віктор Сабалдашов</strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item skipped" style="top: 55.5556%; height: 8.33333%;">
+                        <div class="journal__lessons-time">13:00 • 13:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>хімія </b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/o.safronova"><strong>Оксана Сафронова</strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                    </div>
+                    <div class="journal__lessons isToday">
+                      <div class="journal__lessons-item skipped" style="top: 22.2222%; height: 8.33333%;">
+                        <div class="journal__lessons-time">10:00 • 10:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>англійська мова </b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/kiyanitsalydmila"><strong>Кияниця Людмила </strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item skipped" style="top: 33.3333%; height: 8.33333%;">
+                        <div class="journal__lessons-time">11:00 • 11:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>англійська мова </b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/kiyanitsalydmila"><strong>Кияниця Людмила </strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item skipped" style="top: 44.4444%; height: 8.33333%;">
+                        <div class="journal__lessons-time">12:00 • 12:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>українська мова</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/pavlushenko"><strong>Валентина Павлушенко</strong></a></div>
+                        <div class="journal__lessons-skipped">Пропуск</div>
+                      </div>
+                      <div class="journal__lessons-item isCurrent" style="top: 55.5556%; height: 8.33333%;">
+                        <div class="journal__lessons-time">13:00 • 13:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>математика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/natalyatsilik"><strong>Наталя Цілик</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                    </div>
+                    <div class="journal__lessons">
+                      <div class="journal__lessons-item" style="top: 33.3333%; height: 8.33333%;">
+                        <div class="journal__lessons-time">11:00 • 11:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>математика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/natalyatsilik"><strong>Наталя Цілик</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 44.4444%; height: 8.33333%;">
+                        <div class="journal__lessons-time">12:00 • 12:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>математика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/natalyatsilik"><strong>Наталя Цілик</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 55.5556%; height: 8.33333%;">
+                        <div class="journal__lessons-time">13:00 • 13:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>фізика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/l.bogodist"><strong>Людмила Богодіст</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 66.6667%; height: 8.33333%;">
+                        <div class="journal__lessons-time">14:00 • 14:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>історія</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/v.sabaldashov"><strong>Віктор Сабалдашов</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                    </div>
+                    <div class="journal__lessons">
+                      <div class="journal__lessons-item" style="top: 22.2222%; height: 8.33333%;">
+                        <div class="journal__lessons-time">10:00 • 10:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>хімія </b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/o.safronova"><strong>Оксана Сафронова</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 33.3333%; height: 8.33333%;">
+                        <div class="journal__lessons-time">11:00 • 11:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>математика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/natalyatsilik"><strong>Наталя Цілик</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 44.4444%; height: 8.33333%;">
+                        <div class="journal__lessons-time">12:00 • 12:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>біологія</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/o.smolyanova"><strong>Олександра Смірнова</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                    </div>
+                    <div class="journal__lessons">
+                      <div class="journal__lessons-item" style="top: 22.2222%; height: 8.33333%;">
+                        <div class="journal__lessons-time">10:00 • 10:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>українська література</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/l.korostosheviz"><strong>Лариса Коростошевиць</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 33.3333%; height: 8.33333%;">
+                        <div class="journal__lessons-time">11:00 • 11:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>фізика</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/l.bogodist"><strong>Людмила Богодіст</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 44.4444%; height: 8.33333%;">
+                        <div class="journal__lessons-time">12:00 • 12:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>українська мова</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/pavlushenko"><strong>Валентина Павлушенко</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                      <div class="journal__lessons-item" style="top: 55.5556%; height: 8.33333%;">
+                        <div class="journal__lessons-time">13:00 • 13:45</div>
+                        <div class="journal__lessons-name"><strong><i class="fa fa-graduation-cap"
+                              aria-hidden="true"></i><b>біологія</b></strong></div>
+                        <div class="journal__lessons-teacher"><span>Викладач: </span><a
+                            href="/user/o.smolyanova"><strong>Олександра Смірнова</strong></a></div>
+                        <div class="journal__lessons-skipped"></div>
+                      </div>
+                    </div>
+                    <div class="journal__lessons"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -410,6 +627,21 @@
               <i class="studentNav__icon fa fa-book" aria-hidden="true"></i>
               Предмети
             </h2>
+
+            <div class="subjects__subject">
+              <h3 class="subjects__subject-name">Біологія</h3>
+              <p class="subjects__subject-theme">Вступ. Організм людини як цілісна система</p>
+              <div class="subjects__subject-lesson">
+                <div class="subjects__subject-lesson-icon">
+                  <i class="fa fa-paragraph" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span class="subjects__subject-lesson-name">
+                    Організм людини як біологічна система
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -530,6 +762,326 @@
             </h2>
 
             <p class="library__info demo-access-section__info">Тут будуть знаходитися ваші навчальні матеріали</p>
+          </div>
+        </section>
+
+        <section class="demo-lesson">
+          <div class="content__title-holder">
+            <h2 class="content__title"><i class="content_title-icon fa fa-paragraph" aria-hidden="true"></i>
+              <div class="content__title-inner"><span class="content__title-subtitle"><a
+                    href="/courses/biolohiia/biolohiia8">Біологія 8</a></span>Організм людини як біологічна система
+              </div>
+            </h2>
+            <div class="content__title-actions">
+              <div class="btn btn_primary" id="start-the-test">Розпочати тест</div>
+            </div>
+          </div>
+
+          <div class="demo-lesson__content">
+            <img src="./images/lesson/img-1.jpeg" alt="biology image">
+            <div id="react-mathjax-preview-result">
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Організм людини є складною
+                  біологічною системою, в якій розрізняють системи різних рівнів структурної організації: від атомів і
+                  молекул — аж до систем органів.</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Кожен рівень організації організму
+                  людини має свою структуру і виконує певну функцію. Усі компоненти взаємопов’язані та взаємодіють між
+                  собою, утворюючи структурно-функціональну єдність — цілісний організм.</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Організм людини, як і будь-яка
+                  біологічна система, є відкритою системою, оскільки відбувається неперервна взаємодія з довкіллям, під
+                  час якої здійснюється обмін із середовищем речовиною, енергією та інформацією.</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Людині притаманні загальні
+                  властивості біологічних систем:</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">самоорганізація</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— внутрішня впорядкованість,
+                  яка виявляється через взаємодію її складових, що забезпечує цілісність організму, надає йому якісно
+                  нових властивостей;</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">обмін речовин та
+                      енергії</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">, що проявляється в процесах
+                  живлення, дихання, виділення;</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">ріст</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;(збільшення маси і розмірів
+                  організму або його органів) і розвиток (якісні перетворення організму);</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">подразливість</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— відповідь організму на
+                  вплив умов зовнішнього середовища та зміни внутрішнього середовища;</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">самовідтворення</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— відтворення собі подібних у
+                  процесі розмноження;</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">спадковість</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;(властивість організму
+                  передавати характерні йому особливості будови і розвитку потомству) і мінливість (здатність набувати
+                  нових ознак);</span></p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">саморегуляція</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— здатність організму
+                  підтримувати сталість хімічного складу, фізичних властивостей, перебігу фізіологічних процесів;</span>
+              </p>
+              <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">адаптація</span></em></strong><span
+                  style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— здатність організму
+                  пристосовуватися до змінних умов навколишнього середовища.</span></p>
+
+              <img src="./images/lesson/img-2.jpeg" alt="biology image">
+              <div id="react-mathjax-preview-result">
+                <p style="text-align: center; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Рівні організації тіла
+                    людини</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Організм людини можна
+                    розглядати<strong><span style="color: #76a900;">&nbsp;на різних рівнях:</span></strong></span></p>
+                <ul>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">атомно-молекулярному;</span>
+                  </li>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">клітинному;</span></li>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">тканинному;</span></li>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">органному;</span></li>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">системному;</span></li>
+                  <li
+                    style="margin-left: 39.3pt; text-align: justify; text-justify: inter-ideograph; text-indent: -18.0pt;">
+                    <span style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"><span
+                        style="font: 7.0pt 'Times New Roman';"> </span></span><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">організменному.</span></li>
+                </ul>
+              </div>
+              <div id="react-mathjax-preview-result">
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 21.3pt;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Організм людини складається
+                    з&nbsp;<strong><span style="color: #76a900;">молекул</span></strong>,&nbsp;<strong><span
+                        style="color: #76a900;">атомів</span></strong>,&nbsp;<strong><span
+                        style="color: #76a900;">йонів</span></strong>, утворених різними хімічними елементами.
+                    Найважливіше значення для побудови білкової структури організму&nbsp;
+                    мають&nbsp;<strong>Карбон&nbsp;<span
+                        style="color: #76a900;">С</span></strong>,&nbsp;<strong>Гідроген&nbsp;<span
+                        style="color: #76a900;">Н</span></strong>,&nbsp;<strong>Оксиген&nbsp;<span
+                        style="color: #76a900;">О</span></strong>, <strong>Нітроген&nbsp;<span
+                        style="color: #76a900;">N</span></strong>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Організм людини
+                    складається з&nbsp;<strong><span style="color: #76a900;">еукаріотичних клітин</span></strong>, які
+                    мають оформлене ядро ​​і будову, характерну для клітин тварин.&nbsp; </span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 21.3pt;"><strong><span
+                      style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Клітини</span></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;і&nbsp;<strong>міжклітинна
+                      речовина</strong>&nbsp;утворюють в організмі людини&nbsp;<strong><span
+                        style="color: #76a900;">тканини</span></strong>. Залежно від виду тканини вони виконують різні
+                    функції, тому мають різні розміри і форму.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 21.3pt;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Кожен&nbsp;<strong><span
+                        style="color: #76a900;">орган&nbsp;складається з тканин</span></strong>, які мають загальну
+                    структуру і виконують подібні функції. В органі один вид тканини завжди переважає.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; color: #212121;">Клітина</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— це найменша структурна та
+                    функціональна одиниця живого. Ззовні вона вкрита клітинною мембраною, а зсередини заповнена
+                    цитоплазмою з органелами та ядром. Ці маленькі заповнені рідиною мішечки містять компоненти,
+                    відповідальні за тисячі біохімічних реакцій, необхідних для росту й виживання.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">В організмі людини нараховується
+                    близько 200 тинів клітин. Форма й будова різних тинів клітин тісно пов’язані з виконуваною ними
+                    функцією.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; color: #212121;">Тканина</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— це сукупність клітин, які
+                    мають спільне походження, подібні за будовою і функціями та міжклітинною речовиною, яка їх оточує.
+                    Усі тканини організму людини можна розділити на 4 основні типи: епітеліальна, нервова. м’язова,
+                    тканини внутрішнього середовища.</span></p>
+              </div>
+
+              <img src="./images/lesson/img-3.jpeg" alt="biology image">
+              <div id="react-mathjax-preview-result">
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Органи — це наступний рівень
+                    організації організму людини. Орган складається із двох чи більше типів тканин. Найбільшим органом
+                    організму людини є шкіра, що складається з чотирьох основних типів тканин. Для виконання спільних
+                    функцій, органи об’єднуються в системи органів, які ще називаються фізіологічними системами. В
+                    організмі людини виділяють такі системи органів: кровоносну, дихальну, лімфатичну, імунну, травну,
+                    видільну, опорно-рухову, покривну, статеву, ендокринну, нервову.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Кровоносна</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">,
+                    або&nbsp;<strong><em>серцево-судинна система</em></strong>&nbsp;— транспортує кисень, гормони,
+                    поживні речовини до клітин організму. Також вона збирає продукти життєдіяльності клітин і
+                    вуглекислий газ.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Дихальна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— насичує кров киснем та
+                    виводить із організму повітря, насичене вуглекислим газом.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Імунна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— захищає організм від
+                    збудників інфекційних захворювань та шкідливих, токсичних речовин.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Лімфатична
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— транспортує лімфу між
+                    тканинами та кровоносним руслом, разом з імунною системою захищає організм від інфекцій і
+                    хвороб.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Травна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— забезпечує перетравлення
+                    їжі і всмоктування поживних речовин, мінералів, вітамінів, води.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Видільна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— виводить із організму
+                    надлишки води, солей, продуктів обміну речовин, контролює сталий водно-сольовий баланс та рівень
+                    кислотності.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Опорно-рухова
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— підтримує форму тіла,
+                    захищає м'які тканини, зберігає мінеральні речовини. Бере участь у скоротливій активності різних
+                    органів та виробленні тепла, забезпечує дихальні рухи. Бере участь у кровотворенні.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Покривна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;(шкіра, волосся, нігті) —
+                    забезпечує захист від механічних пошкоджень, проникнення інфекційних мікроорганізмів, втрати води, а
+                    також процеси терморегуляції.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Репродуктивна система
+                        (статева)</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— виробляє статеві клітини
+                    (сперматозоїди, яйцеклітини), статеві гормони, забезпечує розмноження.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Нервова
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— збирає, обробляє та
+                    передає інформацію, регулює функції інших органів.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Ендокринна
+                        система</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;— виробляє гормони, що
+                    регулюють взаємозв’язок між різними органами та метаболізм усього організму.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Хоча кожна з фізіологічних систем
+                    органів відповідає за виконання специфічної функції, різні системи органів об’єднуються у
+                    функціональні системи для забезпечення злагодженої роботи організму. Наприклад, одна з найбільш
+                    важливих функцій організму — це забезпечення клітин киснем і поживними речовинами та виведення
+                    продуктів обміну речовин. Для виконання даної функції потрібна злагоджена робота дихальної,
+                    кровоносної, лімфатичної, травної, видільної систем та координація з нервовою та ендокринною
+                    системами.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Організм людини працює як єдине
+                    ціле завдяки механізмам регуляції фізіологічних функцій: гуморальному, нервовому.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; color: #212121;">Гуморальний механізм
+                        регуляції</span></em></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;</span><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">(від лат.</span><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">humor</span><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';"> - волога) здійснюється з
+                    допомогою хімічних речовин, що утворюються в процесі обміну речовин у клітинах, розносяться кров’ю
+                    по всьому організму і впливають на діяльність клітин, тканин і органів. Деякі з них володіють
+                    високою біологічною активністю - гормони. У дуже малих концентраціях вони здатні викликати значні
+                    зміни функцій окремих органів і організму в цілому.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Гуморальна регуляція
+                    характеризується тим, що не має певного “ адресата” (хімічна речовина діє на всі клітини, але
+                    чутливими до неї ті, в яких є відповідний рецептор), повільно діє, тривалий час впливає на
+                    організм.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><strong><em><span
+                        style="font-size: 14.0pt; color: #212121;">Нервова регуляція</span></em></strong><strong><span
+                      style="font-size: 14.0pt; color: #212121;">&nbsp;</span></strong><strong><span
+                      style="font-size: 14.0pt; color: #212121;">-</span></strong><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">&nbsp;</span><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">більш досконала, забезпечується
+                    діяльністю нервової системи, яка об’єднує і зв’язує всі клітини і органи в єдине ціле, змінює і
+                    регулює їхню діяльність, здійснює зв’язок організму з навколишнім середовищем. ЦНС досить тонко і
+                    точно сприймаючи зміни навколишнього і внутрішнього стану організму, своєю діяльністю забезпечує
+                    розвиток і пристосування організму до мінливих умов існування.</span></p>
+                <p style="text-align: justify; text-justify: inter-ideograph; text-indent: 1.0cm;"><span
+                    style="font-size: 14.0pt; font-family: 'Times New Roman','serif';">Нервова і гуморальна регуляція
+                    тісно взаємозв’язані. Гормони впливають на стан нервової системи. Утворення і виділення гормонів
+                    контролює нервова система. Нервові структури надзвичайно швидко сприймають найдрібніші зміни
+                    фізико-хімічних параметрів зовнішнього і внутрішнього середовища і відповідно реагують на них за
+                    допомогою хімічних факторів регуляції. Нервова і гуморальні механізми регуляції діють
+                    взаємоузгоджено і утворюють єдину нейрогуморальну регуляцію, яка створює умови для взаємодії всіх
+                    систем організму, зв’язує їх в єдине ціле і забезпечує взаємодію організму із середовищем.</span>
+                </p>
+              </div>
+              <img src="./images/lesson/img-4.jpeg" alt="biology image">
+
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/wearHJn0Bnc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo-test">
+          <div class="content__title-holder">
+            <h2 class="content__title"><i class="content_title-icon fa fa-paragraph" aria-hidden="true"></i>
+              <div class="content__title-inner"><span class="content__title-subtitle"><a
+                    href="/courses/biolohiia/biolohiia8">Біологія 8</a></span>Організм людини як біологічна система
+              </div>
+            </h2>
+            <div class="content__title-actions">
+              <div class="btn btn_primary" id="save-the-test">Зберегти</div>
+            </div>
+          </div>
+
+          <div class="demo-test__content">
+            <article class="article">
+              <div class="article__title">Завдання №1</div>
+              <div class="false undefined">
+                <div class="article__block type-text">
+                  <div id="react-mathjax-preview">
+                    <div id="react-mathjax-preview-result">
+                      <p>Розгляньте малюнок 1, розпізнайте&nbsp; зображені на ньому органи. Заповніть таблицю&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="false undefined">
+                <div class="article__block type-media">
+                  <div class="imageEditor__image-wrapper">
+                    <div class="imageEditor__image-holder">
+                      <img src="./images/lesson/test-img-1.jpeg">
+                      <img src="./images/lesson/test-img-2.jpeg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__submit-holder">
+                <div class="article__submit"><span class="btn btn_primary" disabled="">Відправити</span></div>
+              </div>
+            </article>
           </div>
         </section>
 
