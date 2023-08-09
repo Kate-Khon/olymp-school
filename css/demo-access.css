@@ -803,6 +803,20 @@ body {
   color: #7f00a3;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
+  .main__enter-the-name {
+    width: 1200px;
+    height: calc(100vh - 120px);
+  }
+  
+  .main__enter-the-name-container {
+    margin-top: -100px;
+    padding: 40px;
+    background-color: #C5BFED;
+    border-radius: 30px;
+  }
 
+  .form__field-holder {
+    width: 300px;
+  }
 }
