@@ -11,7 +11,6 @@ body {
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
-  background-color: blue;
 }
 
 .header {
@@ -39,17 +38,90 @@ body {
   background-color: #ccc;
 }
 
+.main__enter-the-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #000;
+  box-shadow: 0px 0px 9px 0px #333;
+  opacity: 94%;
+  z-index: 10;
+}
+
+.main__enter-the-name-container {
+  margin-top: -100px;
+  padding: 40px;
+  background-color: #C5BFED;
+  border-radius: 30px;
+}
+
 .navigation {
   padding: 20px;
   width: 200px;
-  background-color: pink;
   text-transform: uppercase;
+  background-color: #fff;
+}
+
+.main-user {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.main-user__avatar {
+  position: relative;
+  margin: 0 auto 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.main-user__avatar:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 5px 5px 0 rgb(0 0 0 / 25%);
+}
+
+.main-user__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.main-user__user-role {
+  display: flex;
+  justify-content: center;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-user__user-class {
+  color: #333;
+  font-weight: 700;
+  display: flex;
+}
+
+.main-user__user-class:before {
+  font-weight: 400;
+  content: "/";
+  margin: 0 5px;
+  color: #999;
 }
 
 .main-menu__list {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  width: 120px;
 }
 
 .main-menu__list-item {
@@ -404,6 +476,10 @@ body {
   color: green;
 }
 
+.bg-form-color {
+  background-color: gainsboro;
+}
+
 /* COPY of journal styles */
 
 .journal-container {
@@ -721,4 +797,8 @@ body {
   padding: 10px;
   font-size: 18px;
   color: #7f00a3;
+}
+
+@media (max-width: 1440px) {
+
 }

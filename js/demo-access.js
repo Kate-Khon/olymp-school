@@ -65,11 +65,24 @@ btn.addEventListener('click', () => {
 
 // profile name
 let username = 'Name';
+const startUsername = document.getElementById('start-username');
 const nameInput = document.getElementById('username');
+const visibleName = document.querySelector('.main-user__name');
+const enterNamePage = document.querySelector('.main__enter-the-name');
+
+visibleName.innerHTML = username;
 nameInput.value = username;
+
+startUsername.onchange = () => {
+  nameInput.value = startUsername.value;
+  username = nameInput.value;
+  visibleName.innerHTML = username;
+  enterNamePage.style.zIndex = "-1";
+}
 
 nameInput.onchange = () => {
   username = nameInput.value;
+  visibleName.innerHTML = username;
   nameInput.value = username;
 }
 // profile name

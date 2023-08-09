@@ -596,12 +596,12 @@ body {
     gap: 40px;
     z-index: 5;
 
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: transform .3s;
   }
 
   .menu__list.menu__list--active {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 
   .menu__list-item {
