@@ -6,11 +6,29 @@ const removeActiveClass = () => {
 
   demoLesson.classList.remove('active');
   demoTest.classList.remove('active');
+
+  // part of menu burger
+  content.classList.remove('demo-access-container--active');
+  menuBtn.classList.remove('menu__burger--active');
+  body.classList.remove('overflow-hidden');
+  // part of menu burger
 }
 
 const addActiveClass = (element) => {
   element.classList.add('active');
 }
+
+// menu burger
+const menuBtn = document.querySelector('.menu__burger');
+const content = document.querySelector('.demo-access-container');
+const body = document.querySelector('body');
+
+menuBtn.addEventListener('click', () => {
+  content.classList.toggle('demo-access-container--active');
+  menuBtn.classList.toggle('menu__burger--active');
+  body.classList.toggle('overflow-hidden');
+});
+// menu burger
 
 // subject
 const subject = document.querySelector('.subjects__subject-lesson');
@@ -61,7 +79,7 @@ btn.addEventListener('click', () => {
   addActiveClass(scheduleNav);
   addActiveClass(schedule);
 });
-// full schedulr button
+// full schedule button
 
 // profile name
 let username = 'Name';
