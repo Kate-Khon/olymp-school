@@ -1006,10 +1006,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
-    zoom: 100%;
-  }
-  
   .main__enter-the-name-container {
     margin: 200px auto;
     max-width: 90%;

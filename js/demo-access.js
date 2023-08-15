@@ -96,6 +96,7 @@ startUsername.onchange = () => {
   username = nameInput.value;
   visibleName.innerHTML = username;
   enterNamePage.style.display = "none";
+  body.style.zoom = "100%";
 }
 
 nameInput.onchange = () => {
