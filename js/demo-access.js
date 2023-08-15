@@ -95,7 +95,7 @@ startUsername.onchange = () => {
   nameInput.value = startUsername.value;
   username = nameInput.value;
   visibleName.innerHTML = username;
-  enterNamePage.style.zIndex = "-1";
+  enterNamePage.style.display = "none";
 }
 
 nameInput.onchange = () => {
