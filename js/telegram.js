@@ -9,12 +9,14 @@ document.getElementById('tg').addEventListener('submit', (element) => {
 
   const tgName = document.getElementById('tg-name').value;
   const tgNumber = document.getElementById('tg-number').value;
+  const tgComment = document.getElementById('tg-comment').value;
   const tgMessage = document.querySelector('.tg-message');
 
   if (numberReg.test(tgNumber)) {
     let message = `<b>Нова заявка з сайту!</b>\n`;
     message += `<b>Ім'я:</b> ${tgName}\n`;
-    message += `<b>Номер телефону:</b> ${tgNumber}`;
+    message += `<b>Номер телефону:</b> ${tgNumber}\n`;
+    message += `<b>Коментар:</b> ${tgComment}`;
   
     axios.post(URI_API, {
       chat_id: CHAT_ID,

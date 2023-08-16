@@ -728,6 +728,10 @@ body {
   opacity: .25;
 }
 
+.journal__day-date strong {
+  display: none;
+}
+
 /* lesson */
 
 .content__title-holder {
@@ -812,6 +816,19 @@ body {
 .demo-lesson__content img,
 .demo-test__content img {
   width: 100%;
+}
+
+.imageEditor__image-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.low-img-quality {
+  width: fit-content;
+  max-width: 50%;
 }
 
 .article__submit-holder {
