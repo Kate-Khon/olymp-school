@@ -13,6 +13,22 @@
   background-color: var(--main-color);
 }
 
+.sides__middle-side {
+  animation: rotate 1.5s ease-in-out forwards;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0.5turn) scale(0.5);
+    filter: opacity(0);
+  }
+
+  100% {
+    transform: rotate(2turn) scale(1);
+  }
+}
+
 .sides__left-side {
   display: flex;
   flex-direction: column;
