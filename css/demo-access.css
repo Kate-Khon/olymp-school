@@ -45,7 +45,7 @@ body {
   top: 0;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 25%);
-  z-index: 3;
+  z-index: 4;
 }
 
 .logo-3 {
@@ -908,7 +908,7 @@ body {
     top: 90px;
     left: -200px;
     height: 100vh;
-    z-index: 1;
+    z-index: 3;
   }
 
   .demo-access-container {
