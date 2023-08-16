@@ -35,6 +35,7 @@ const tgPhone = document.querySelector('.tg-phone');
 const tgForm = document.querySelector('.tg-form');
 
 tgPhone.addEventListener('click', () => {
+  tgPhone.classList.toggle('activated');
   tgForm.classList.toggle('active');
   document.querySelector(".tg-message").innerHTML = '';
 });

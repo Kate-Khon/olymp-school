@@ -140,10 +140,40 @@ body {
   position: fixed;
   bottom: 40px;
   right: 10px;
+  z-index: 10;
+}
+
+.tg-phone img {
   width: 60px;
   height: 60px;
-  z-index: 10;
   animation: pulsing 1s infinite alternate;
+}
+
+.tg-phone.activated .tg-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.tg-phone.activated .tg-close span {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--main-color);
+  z-index: 11;
+}
+
+.tg-close span:first-child {
+  transform: rotate(45deg);
+}
+
+.tg-close span:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .tg-form {
