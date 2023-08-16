@@ -718,6 +718,7 @@ body {
     bottom: 0;
     left: 0;
     height: 100vh;
+    min-height: 667px;
     width: 100%;
     min-width: 375px;
     background-color: var(--light-main);
