@@ -5,18 +5,6 @@ promotionsItems.forEach(element => {
     element.classList.toggle('active');
   });
 });
-// for (let i = 0; i < promotionsImgs.length; i++) {
-//   promotionsImgs[i].addEventListener('click', () => {
-//     promotionsImgs[i].classList.remove('active');
-//     promotionsInfo[i].classList.add('active');
-//   });
-  
-//   promotionsInfo[i].addEventListener('click', () => {
-//     promotionsImgs[i].classList.add('active');
-//     promotionsInfo[i].classList.remove('active');
-//   });
-// }
-
 
 const osList = document.querySelectorAll('.os-list__list-item');
 
