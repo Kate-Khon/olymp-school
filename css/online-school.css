@@ -489,6 +489,7 @@
 @media (min-width: 1000px) {
   .tg-phone {
     top: 49%;
+    height: fit-content;
   }
 
   .tg-form {
