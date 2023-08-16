@@ -21,12 +21,14 @@ const addActiveClass = (element) => {
 // menu burger
 const menuBtn = document.querySelector('.menu__burger');
 const content = document.querySelector('.demo-access-container');
+const contentTitle = document.querySelector('.demo-access-section__title');
 const body = document.querySelector('body');
 
 menuBtn.addEventListener('click', () => {
   content.classList.toggle('demo-access-container--active');
   menuBtn.classList.toggle('menu__burger--active');
   body.classList.toggle('overflow-hidden');
+  contentTitle.classList.toggle('position-static');
 });
 // menu burger
 
@@ -96,7 +98,7 @@ startUsername.onchange = () => {
   username = nameInput.value;
   visibleName.innerHTML = username;
   enterNamePage.style.display = "none";
-  body.style.zoom = "100%";
+  // body.style.zoom = "100%";
 }
 
 nameInput.onchange = () => {

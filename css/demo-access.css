@@ -6,10 +6,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .menu__burger {
   margin-left: 40px;
   transform: translateZ(0);
@@ -862,6 +858,11 @@ body {
 }
 
 @media (max-width: 1025px) {
+  @viewport {
+    zoom: 1.0;
+    min-zoom: 1.0;
+  }
+
   .header__inner {
     height: 80px;
   }
@@ -907,7 +908,7 @@ body {
     top: 90px;
     left: -200px;
     height: 100vh;
-    z-index: 3;
+    z-index: 1;
   }
 
   .demo-access-container {
@@ -1055,4 +1056,12 @@ body {
   .iframe-video {
     height: 200px;
   }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.position-static {
+  position: static;
 }
